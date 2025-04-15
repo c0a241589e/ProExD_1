@@ -11,6 +11,7 @@ def main():
     clock  = pg.time.Clock()
     bg_img = pg.image.load("fig/pg_bg.jpg")
     kk_img = pg.image.load("fig/3.png") #練習1
+    kk_img = pg.transform.flip(kk_img, True, False) #練習2
     tmr = 0
     while True:
         for event in pg.event.get():
